@@ -1,0 +1,15 @@
+{
+  "test_users": [
+    {
+      "username": "testqa2026",
+      "password": "Test@123",
+      "account_type": "checking"
+    }
+  ],
+  "transfer_amounts": [10.00, 25.50, 50.00, 100.00, 500.00],
+  "invalid_transfers": [
+    {"amount": 0, "expected_error": "Amount must be greater than 0"},
+    {"amount": -10, "expected_error": "Amount must be positive"},
+    {"amount": 1000000, "expected_error": "Insufficient funds"}
+  ]
+}
